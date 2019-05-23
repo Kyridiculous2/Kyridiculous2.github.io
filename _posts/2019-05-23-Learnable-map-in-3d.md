@@ -3,6 +3,7 @@ layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
 bigimg: /img/path.jpg
+image: /img/kyrie.jpg
 tags: [test]
 comments: true
 ---
