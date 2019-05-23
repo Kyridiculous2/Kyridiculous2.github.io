@@ -1,12 +1,9 @@
 ---
 layout: post
-title: Test
-subtitle: Each post also has a subtitle
-
-image: /img/kyrie.jpg
-tags: [test]
-comments: true
+title: md
+subtitle: md
 ---
+
 
 
 
