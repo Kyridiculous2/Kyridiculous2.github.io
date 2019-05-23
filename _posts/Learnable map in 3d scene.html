@@ -1,0 +1,703 @@
+---
+layout: post
+title: Test html
+subtitle: Each post also has a subtitle
+bigimg: /img/path.jpg
+image: /img/kyrie.jpg
+tags: [test]
+comments: true
+---
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Learnable map in 3d scene - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="Learnable-map-in-3d-scene"><a class="anchor hidden-xs" href="#Learnable-map-in-3d-scene" title="Learnable-map-in-3d-scene"><span class="octicon octicon-link"></span></a>Learnable map in 3d scene</h1><h2 id="Related-work"><a class="anchor hidden-xs" href="#Related-work" title="Related-work"><span class="octicon octicon-link"></span></a>Related work</h2><h3 id="Navigationslammap"><a class="anchor hidden-xs" href="#Navigationslammap" title="Navigationslammap"><span class="octicon octicon-link"></span></a>Navigation/slam/map</h3><ul>
+<li>
+<p><em>MAPNET</em><br>
+<a href="https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/henriques18mapnet.pdf" target="_blank" rel="noopener">https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/henriques18mapnet.pdf</a><br>
+<img src="https://i.imgur.com/1aqOKbl.png" alt="network"></p>
+<ul>
+<li>Features
+<ul>
+<li>Uninterpretable but geometric aware memory map, update with RNN
+<ul>
+<li>Algocentric Discretized map (given size ahead)</li>
+<li>Pose only include orientation</li>
+<li>RGBD image, project features to the ground</li>
+</ul>
+</li>
+<li>Experiments
+<ul>
+<li>for localization</li>
+<li>both real and virtual</li>
+<li>compare with multiple baselines</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Incremental Scene Synthesis</em><br>
+<a href="https://arxiv.org/pdf/1811.12297.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1811.12297.pdf</a><br>
+<img src="https://i.imgur.com/z3aIqY2.png" alt=""></p>
+<ul>
+<li>feature
+<ul>
+<li>only scene obs provided by an active, non-localized agent. based on mapnet to store memory and anticipate new ones</li>
+<li>first learning mechanism to explicitly ensure globally consistent representation upodate</li>
+<li>first framework that integrates localization, globally consistent scene learning, data observation, and hallucination-aware representation updating to enable incremental unobserved scene synthesis</li>
+<li>use GAN to anticipate holes in the memory</li>
+</ul>
+</li>
+<li>experiment
+<ul>
+<li>2D photo and 3D realistic scene(not looks good though)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Scene Memory Transformer for Embodied Agents in Long-Horizon Tasks</em></p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1903.03878.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1903.03878.pdf</a></li>
+<li><img src="https://i.imgur.com/inbWlht.png" alt=""></li>
+<li>features
+<ul>
+<li>Transformer like attention mechanism on previous obs</li>
+<li>Memory Factorization</li>
+<li>No RNN, a state representation for RL</li>
+<li>multi modality input</li>
+</ul>
+</li>
+<li>experiments
+<ul>
+<li>Suncg House</li>
+<li>pose x,y,theta, discretized action of forward,turn left… no noise</li>
+<li>define 3 task,roaming,coverage,search</li>
+<li>compare with baselines</li>
+<li>ablation study</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Cognitive mapping and planning for visual navigation</em></p>
+<ul>
+<li>
+<p><a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Gupta_Cognitive_Mapping_and_CVPR_2017_paper.pdf" target="_blank" rel="noopener">http://openaccess.thecvf.com/content_cvpr_2017/papers/Gupta_Cognitive_Mapping_and_CVPR_2017_paper.pdf</a><br>
+<img src="https://i.imgur.com/qmWtxiY.png" alt=""></p>
+</li>
+<li>
+<p>features</p>
+<ul>
+<li>egocentric (belief) map that updated with geometry information(go with agent)</li>
+<li>end2end learning method to update map</li>
+</ul>
+</li>
+<li>
+<p>experiments</p>
+<ul>
+<li>real data</li>
+<li>fixed height, pitch</li>
+<li>micro actions</li>
+<li>grid world</li>
+<li>no noise</li>
+<li>pre-process for traversable space and a dircted graph and a connectivity structure based on the available actions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Unifying Map and Landmark Based Representations for Visual Navigation</em></p>
+<ul>
+<li>
+<p><a href="https://arxiv.org/pdf/1712.08125.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1712.08125.pdf</a></p>
+</li>
+<li>
+<p>features</p>
+<ul>
+<li>
+<p>N number of registered RGB images and poses known ahead to build differentiable map as above</p>
+</li>
+<li>
+<p><img src="https://i.imgur.com/OdIYJXt.png" alt=""></p>
+</li>
+<li>
+<p>Generate navigation commands then compensate at these pre-generated locations</p>
+</li>
+</ul>
+</li>
+<li>
+<p>experiments</p>
+<ul>
+<li>mapping
+<ul>
+<li>predict top view free space using landmarks</li>
+</ul>
+</li>
+<li>check the predicted feature at the predicted place<br>
+<img src="https://i.imgur.com/LJ7HR2M.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>NEURAL MAP: STRUCTURED MEMORY FOR DEEP REINFORCEMENT LEARNING</em><br>
+-<a href="https://arxiv.org/pdf/1702.08360.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1702.08360.pdf</a></p>
+<ul>
+<li>features
+<ul>
+<li>define a map like memory for intergrating all the observations.</li>
+<li>define write,read,update operations on the map use egomotion</li>
+<li>map actual world coords to the feature map</li>
+<li>can be a egocentirc map</li>
+<li>for reinforcement learning</li>
+<li>GRU extensions</li>
+</ul>
+</li>
+<li>experiments
+<ul>
+<li>grid world, vizdoom</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Learning models for visual 3D localization with implicit mapping</em></p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1807.03149.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1807.03149.pdf</a></li>
+<li>features
+<ul>
+<li>
+<p>Use GQN directly to do localization</p>
+</li>
+<li>
+<p>MAP inference</p>
+<ul>
+<li><img src="https://i.imgur.com/o5JBfB7.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p>Update of GQN:</p>
+<ul>
+<li>creat dictionary for representation with an attention mechanism to select features from context views</li>
+<li>A discriminitor network to directly regress pose as a baseline</li>
+<li>Was rejected due to the unproper experiments:not comparing to baselines in the real dataset</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>experiments
+<ul>
+<li>still in virtual(minecraft) the generated images still not look good<br>
+<img src="https://i.imgur.com/htI6Qqx.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>A Generative Map for Image-based Camera Localization</em></p>
+<ul>
+<li>
+<p><a href="https://arxiv.org/pdf/1902.11124.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1902.11124.pdf</a></p>
+</li>
+<li>
+<p>freature</p>
+</li>
+<li>
+<p><img src="https://i.imgur.com/6A1J1Q1.png" alt=""></p>
+<ul>
+<li>
+<p>Readable Generative map(generate image given pose)<br>
+<img src="https://i.imgur.com/CBdvIrk.png" alt=""></p>
+</li>
+<li>
+<p>Add Kalman filter for localization</p>
+</li>
+<li>
+<p>On real dataset and get comparable results</p>
+</li>
+</ul>
+</li>
+<li>
+<p>experiments</p>
+<ul>
+<li>input image 96x96 output 64x64</li>
+<li>Trained on each indiviual scene</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Learning Exploration Polices for navigation</em></p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1903.01959.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1903.01959.pdf</a></li>
+</ul>
+</li>
+<li>
+<p><em>Benchmarking Classic and Learned Navigation in Complex 3D Environments</em></p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1901.10915.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1901.10915.pdf</a></li>
+<li>A throrough comparison between classic slam based navigation and learning based algrithoms,very detailed experiments</li>
+<li>Learning based is generally worse than the slam</li>
+<li><img src="https://i.imgur.com/aNSTGgR.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p>Generative Temporal Models with Spatial Memory for Partially Observed Environments</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1804.09401.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1804.09401.pdf</a></li>
+</ul>
+</li>
+<li>
+<p>Sequential Neural Models with Stochastic Layers</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1605.07571.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1605.07571.pdf</a></li>
+</ul>
+</li>
+</ul><h2 id="View-synthesis"><a class="anchor hidden-xs" href="#View-synthesis" title="View-synthesis"><span class="octicon octicon-link"></span></a>View synthesis</h2><ul>
+<li>
+<p>Predicting Novel Views Using Generative Adversarial Query Network<br>
+<a href="https://arxiv.org/pdf/1904.05124.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1904.05124.pdf</a></p>
+<ul>
+<li>feature
+<ul>
+<li>GQN + Discriminitor</li>
+<li>loss analog to gan
+<ul>
+<li>least square gan</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Multi-view to Novel view:Synthesizing novel views with Self-Learned Confidence<br>
+<a href="https://shaohua0116.github.io/Multiview2Novelview/sun2018multiview.pdf" target="_blank" rel="noopener">https://shaohua0116.github.io/Multiview2Novelview/sun2018multiview.pdf</a><br>
+<img src="https://i.imgur.com/qLK8N41.png" alt=""></p>
+<ul>
+<li>feature
+<ul>
+<li>flow predictor: inspired by eccv16 appearance flow</li>
+<li>pixel generator
+<ul>
+<li>conv-lstm</li>
+<li>least squares gan</li>
+</ul>
+</li>
+<li>self-learned confidence aggregation
+<ul>
+<li>per-pixel confidence map<br>
+<img src="https://i.imgur.com/mJFW75u.png" alt=""></li>
+</ul>
+</li>
+<li>prediction as<br>
+<img src="https://i.imgur.com/CL4rUcJ.png" alt=""></li>
+<li>total objective<br>
+<img src="https://i.imgur.com/NvBB853.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>View Synthesis by Appearance Flow</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1605.03557.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1605.03557.pdf</a></li>
+<li>features
+<ul>
+<li><a href="https://arxiv.org/pdf/1506.06825.pdf" target="_blank" rel="noopener">DeepStereo</a> can only interpolate between seen photos,generate already seen content<br>
+<img src="https://i.imgur.com/qPvlJEs.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Novel View Synthesis for Large-scale Scene using Adversarial Loss</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1802.07064.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1802.07064.pdf</a></li>
+</ul>
+</li>
+</ul><h2 id="Generative-models"><a class="anchor hidden-xs" href="#Generative-models" title="Generative-models"><span class="octicon octicon-link"></span></a>Generative models</h2><ul>
+<li>
+<p>Learning Structured Output Representationusing Deep Conditional Generative Models<br>
+<a href="https://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models.pdf" target="_blank" rel="noopener">https://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models.pdf</a></p>
+</li>
+<li>
+<p>DCGAN<br>
+<a href="https://arxiv.org/pdf/1511.06434.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1511.06434.pdf</a></p>
+</li>
+<li>
+<p>Least Squares Generative Adversarial Networks<br>
+<a href="https://arxiv.org/pdf/1611.04076.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1611.04076.pdf</a></p>
+</li>
+<li>
+<p>Towards a Deeper Understanding of Variational Autoencoding Models</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1702.08658.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1702.08658.pdf</a></li>
+</ul>
+</li>
+<li>
+<p>Deep Convolutional Inverse Graphics Network</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1503.03167.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1503.03167.pdf</a></li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>Attribute2Image: Conditional Image Generation from Visual Attributes</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1512.00570.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1512.00570.pdf</a></li>
+</ul>
+</li>
+<li>
+<p>Learning Structured Output Representation using Deep Conditional Generative Models</p>
+<ul>
+<li><a href="https://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models.pdf" target="_blank" rel="noopener">https://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models.pdf</a></li>
+</ul>
+</li>
+</ul><h1 id="Ideas"><a class="anchor hidden-xs" href="#Ideas" title="Ideas"><span class="octicon octicon-link"></span></a>Ideas</h1><p>GQN + X</p><h2 id="Common-Issue"><a class="anchor hidden-xs" href="#Common-Issue" title="Common-Issue"><span class="octicon octicon-link"></span></a>Common Issue</h2><ul>
+<li>Training schedule
+<ul>
+<li>Pretrained GQN?</li>
+<li>End to end training?</li>
+</ul>
+</li>
+<li>Adapt GQN on memory module
+<ul>
+<li>Transformer Attention like SMT</li>
+<li>Neural Map</li>
+<li>Deepmind later work</li>
+</ul>
+</li>
+<li>Problem on training GQN
+<ul>
+<li>origninal training random the number of the context view, while including situation where the context view isn’t sufficient to generate the query view, whcih may produce harmful gradient for training(to generate high variance though)</li>
+</ul>
+<div class="alert alert-info">
+<p>Possible contrib: design a training strategy</p>
+<ul>
+<li>learn basic img interpolation at first?</li>
+</ul>
+</div>
+</li>
+</ul><h2 id="X"><a class="anchor hidden-xs" href="#X" title="X"><span class="octicon octicon-link"></span></a>X</h2><h3 id="mimic-Learning-Exploration-Policies"><a class="anchor hidden-xs" href="#mimic-Learning-Exploration-Policies" title="mimic-Learning-Exploration-Policies"><span class="octicon octicon-link"></span></a>mimic Learning Exploration Policies</h3><ul>
+<li>Using GQN to better explore(or other task) in the 3d scene
+<ul>
+<li>To notice
+<ul>
+<li>difference with curiosity driven method
+<ul>
+<li>Maybe jump prediction is the key or else</li>
+</ul>
+</li>
+<li>also issues like possible location in 3d space(may be illegal due to collision)</li>
+</ul>
+</li>
+<li>Then how to formulate the problem</li>
+</ul>
+</li>
+</ul><h3 id="Find-least-GQN"><a class="anchor hidden-xs" href="#Find-least-GQN" title="Find-least-GQN"><span class="octicon octicon-link"></span></a>Find least GQN</h3><ul>
+<li>
+<p>Find the best context views for fixed number</p>
+</li>
+<li>
+<p>Find the least view given a standard of reconstruction quality</p>
+</li>
+<li>
+<p>possible solutions:</p>
+<ul>
+<li>RL for view to take(Bandit)</li>
+<li>Directly optimize<br>
+question : how to generate possible view to take(action space) in a 3d continuous space. Or rather discretize the space</li>
+</ul>
+</li>
+</ul><h1 id="Experiment-env"><a class="anchor hidden-xs" href="#Experiment-env" title="Experiment-env"><span class="octicon octicon-link"></span></a>Experiment env</h1><ul>
+<li>
+<p>Current GQN related dataset</p>
+<ul>
+<li>very easy setting:</li>
+<li>small envs and lack some degree of freedom, eg:in ring room/maze, only x,y,yaw is valid.</li>
+<li>Look at center from a sphere</li>
+<li>Only few objects and poor randomizations.</li>
+<li>Minecraft isn’t photorealistic, either.(prune out sequences where there was no large displacement or where images look the same),normalize x,y to -1,1</li>
+</ul>
+</li>
+<li>
+<p>UE4 dataset</p>
+<ul>
+<li>meta room for domain randomsation</li>
+<li>Realistic envs
+<ul>
+<li>Arch3<br>
+<img src="https://i.imgur.com/wnfvoo5.png" alt="">
+<ul>
+<li>pose area
+<ul>
+<li>x [-1200,-300]</li>
+<li>y [-2900,-400]</li>
+<li>z [50,350]</li>
+</ul>
+</li>
+<li>discrete sampling from 3 axis every 50 respectively,at each location random initialize a yaw,pitch and sample one angle every 90’,totally 18x50x6x8 pictures, then prune infeasible locations.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h1 id="TO-DO"><a class="anchor hidden-xs" href="#TO-DO" title="TO-DO"><span class="octicon octicon-link"></span></a>TO DO</h1><ul>
+<li>
+<p>Test the original GQN on photo realistic scene</p>
+<ul>
+<li>Random sampling
+<ul>
+<li>Sequence lenth of 25, random sample context view from range(1,25),sample target view from the rest</li>
+</ul>
+</li>
+<li>Test image interpolation only</li>
+</ul>
+</li>
+<li>
+<p>Add a transformer attention structure for context view selection</p>
+</li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Learnable-map-in-3d-scene" title="Learnable map in 3d scene">Learnable map in 3d scene</a><ul class="nav">
+<li class=""><a href="#Related-work" title="Related work">Related work</a><ul class="nav">
+<li class=""><a href="#Navigationslammap" title="Navigation/slam/map">Navigation/slam/map</a></li>
+</ul>
+</li>
+<li class=""><a href="#View-synthesis" title="View synthesis">View synthesis</a></li>
+<li class=""><a href="#Generative-models" title="Generative models">Generative models</a></li>
+</ul>
+</li>
+<li class=""><a href="#Ideas" title="Ideas">Ideas</a><ul class="nav">
+<li class=""><a href="#Common-Issue" title="Common Issue">Common Issue</a></li>
+<li class=""><a href="#X" title="X">X</a><ul class="nav">
+<li class=""><a href="#mimic-Learning-Exploration-Policies" title="mimic Learning Exploration Policies">mimic Learning Exploration Policies</a></li>
+<li class=""><a href="#Find-least-GQN" title="Find least GQN">Find least GQN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=""><a href="#Experiment-env" title="Experiment env">Experiment env</a></li>
+<li class=""><a href="#TO-DO" title="TO DO">TO DO</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Learnable-map-in-3d-scene" title="Learnable map in 3d scene">Learnable map in 3d scene</a><ul class="nav">
+<li class=""><a href="#Related-work" title="Related work">Related work</a><ul class="nav">
+<li class=""><a href="#Navigationslammap" title="Navigation/slam/map">Navigation/slam/map</a></li>
+</ul>
+</li>
+<li class=""><a href="#View-synthesis" title="View synthesis">View synthesis</a></li>
+<li class=""><a href="#Generative-models" title="Generative models">Generative models</a></li>
+</ul>
+</li>
+<li class=""><a href="#Ideas" title="Ideas">Ideas</a><ul class="nav">
+<li class=""><a href="#Common-Issue" title="Common Issue">Common Issue</a></li>
+<li class=""><a href="#X" title="X">X</a><ul class="nav">
+<li class=""><a href="#mimic-Learning-Exploration-Policies" title="mimic Learning Exploration Policies">mimic Learning Exploration Policies</a></li>
+<li class=""><a href="#Find-least-GQN" title="Find least GQN">Find least GQN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=""><a href="#Experiment-env" title="Experiment env">Experiment env</a></li>
+<li class=""><a href="#TO-DO" title="TO DO">TO DO</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
