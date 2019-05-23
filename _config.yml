@@ -5,7 +5,7 @@
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 url: "https://Kyridiculous2.github.io"
-baseurl: "https://Kyridiculous2.github.io"
+baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -17,18 +17,22 @@ baseurl: "https://Kyridiculous2.github.io"
 title: Foolish Kyrie
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Kyrie ponder of something great..
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About:
+    - Me : "aboutme"
+    - This Blog: "thisblog"
+
+  Archive: "tags"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
+    - Hackmd: "https://hackmd.io/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
